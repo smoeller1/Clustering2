@@ -1,0 +1,5 @@
+data=read.csv("c:/Users/smoeller/Documents/MSCS/CS5542/Clustering 2/data.csv")
+x<-rbind(data$Lat,data$Lon)
+x<-t(x)
+km<-kmeans(x,13,20)
+plot(x,col=km$cluster)
